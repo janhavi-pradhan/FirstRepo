@@ -1,4 +1,4 @@
-package com.pk;
+
 
 public class MyDate {
 	private int day, month, year;
