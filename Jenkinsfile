@@ -1,20 +1,26 @@
-pipeline {
+pipeline 
+{
 	 agent any 
 	 
-	 stages {
-		stage("compile") {
-			steps {
+	 stages 
+     {
+		stage("compile") 
+        {
+			steps 
+            {
 				echo "Compiling"
 				bat """ javac MyDate.java """
-				}
 			}
-			
-		stage ("run") {
-			steps {
-				echo "Running"
-				bat """ java MyDate """
-				}
-			}
-			
 		}
+			
+		stage ("run") 
+        {
+			steps 
+            {
+				echo "Running"
+				bat """ java MyDate"""
+			}
+		}
+			
 	}
+}
